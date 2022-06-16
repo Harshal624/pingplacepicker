@@ -14,7 +14,7 @@ object PingKoinContext {
 
     val koin: Koin by lazy {
         koinApplication {
-            androidLogger()
+           // androidLogger()
             androidContext(appContext)
             modules(listOf(repositoryModule, viewModelModule))
         }.koin
