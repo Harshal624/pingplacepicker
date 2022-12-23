@@ -15,7 +15,7 @@ internal object PingKoinContext {
 
     val koin: Koin by lazy {
         koinApplication {
-            androidLogger(if (BuildConfig.DEBUG) Level.ERROR else Level.NONE)
+            //androidLogger(if (BuildConfig.DEBUG) Level.ERROR else Level.NONE)
             androidContext(appContext)
             modules(listOf(repositoryModule, viewModelModule))
         }.koin
