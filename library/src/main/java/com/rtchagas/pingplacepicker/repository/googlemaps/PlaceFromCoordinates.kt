@@ -59,6 +59,10 @@ internal class PlaceFromCoordinates(private val latitude: Double, private val lo
         return null
     }
 
+    override fun getIconBackgroundColor(): Int? {
+        return null
+    }
+
     override fun getPriceLevel(): Int? {
         return null
     }
@@ -72,6 +76,10 @@ internal class PlaceFromCoordinates(private val latitude: Double, private val lo
     }
 
     override fun getAddress(): String? {
+        return null
+    }
+
+    override fun getIconUrl(): String? {
         return null
     }
 
