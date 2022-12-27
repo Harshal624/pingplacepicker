@@ -178,7 +178,7 @@ class PlacePickerActivity : AppCompatActivity(),
         disposables.clear()
     }
 
-    override fun onMapReady(map: GoogleMap?) {
+    override fun onMapReady(map: GoogleMap) {
         googleMap = map
         setMapStyle()
         map?.setOnMarkerClickListener(this)
